@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reini Servicios - Reinibel Azuaje</title>
+    <style>
+        /* RESET BÁSICO */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* PERFIL */
+        .perfil {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .perfil img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid #ff7e5f;
+            object-fit: cover;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .perfil img:hover {
+            transform: scale(1.1);
+        }
+
+        .perfil h2 {
+            color: #ff7e5f;
+            margin-bottom: 15px;
+        }
+
+        .perfil p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1em;
+        }
+
+        /* PORTAFOLIO / SERVICIOS */
+        .servicios {
+            background-color: #fff;
+            padding: 60px 20px;
+        }
+
+        .servicios h2 {
+            text-align: center;
+            color: #ff7e5f;
+            margin-bottom: 40px;
+            font-size: 2em;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .card {
+            background: #fdf0e0;
+            padding: 25px;
+            width: 280px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+        }
+
+        .card h3 {
+            color: #feb47b;
+            margin-bottom: 15px;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #ff7e5f;
+            color: white;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .card a:hover {
+            background-color: #feb47b;
+            transform: scale(1.05);
+        }
+
+        /* REDES SOCIALES */
+        .redes {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #fdf0e0;
+        }
+
+        .redes h2 {
+            color: #ff7e5f;
+            margin-bottom: 20px;
+        }
+
+        .redes a {
+            display: inline-block;
+            margin: 10px 15px;
+            font-size: 20px;
+            color: #ff7e5f;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .redes a:hover {
+            color: #feb47b;
+            transform: scale(1.2);
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #ff7e5f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Reini Servicios</h1>
+        <p>Reinibel Azuaje | Estudiante de Comunicación Social</p>
+    </header>
+
+    <section class="perfil">
+        <img src="imagen.jpg" alt="Foto de Reinibel Azuaje">
+        <h2>Sobre mí</h2>
+        <p>Estudiante de Comunicación Social enfocada en el periodismo regional, producción de contenido digital y desarrollo de proyectos multimedia. Apasionada por las nuevas tendencias en medios y la creatividad visual.</p>
+    </section>
+
+    <section class="servicios">
+        <h2>Servicios y Portafolio</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Bachillerato y Estudios</h3>
+                <p>Curso Virtual: Tendencias y Desafíos del Periodismo Regional</p>
+            </div>
+            <div class="card">
+                <h3>Blogspot</h3>
+                <p>Creación y gestión de contenido para blogs personales y profesionales.</p>
+                <a href="https://www.blogger.com" target="_blank">Ver Blog</a>
+            </div>
+            <div class="card">
+                <h3>Aprendiz de Producción Visual</h3>
+                <p>Diseño gráfico y producción de contenido visual para redes sociales y medios digitales.</p>
+                <a href="https://www.canva.com" target="_blank">Ver Producción</a>
+            </div>
+            <div class="card">
+                <h3>Creador de Contenido</h3>
+                <p>Servicios de redacción, edición y gestión de contenido digital de calidad.</p>
+                <a href="https://www.blogger.com" target="_blank">Ver Contenido</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="redes">
+        <h2>Redes Sociales y Contacto</h2>
+        <a href="mailto:reinibel@example.com">📧 Correo</a>
+        <a href="https://www.facebook.com" target="_blank">📘 Facebook</a>
+        <a href="https://www.instagram.com" target="_blank">📸 Instagram</a>
+    </section>
+
+    <footer>
+        2025 | Reinibel Azuaje | Todos los Derechos Reservados
+    </footer>
+
+</body>
+</html>
